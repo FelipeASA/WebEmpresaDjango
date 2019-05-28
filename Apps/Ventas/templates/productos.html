@@ -1,0 +1,15 @@
+<h1>Lista de Productos</h1>
+<style>
+    table{ background-color: black; }
+    td{ background-color: white; padding: 10px; }
+</style>
+
+<table>
+    {% for producto in productos %}
+    <tr>
+        <td>{{ producto.id }}</td>
+        <td>{{ producto.nombre }}</td>
+        <td>{{ producto.precio }}</td>
+    </tr>
+    {% endfor %}
+</table>

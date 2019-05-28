@@ -1,0 +1,13 @@
+<form action="" method="post">
+    {% csrf_token %}
+    <p>
+        {{ form.producto }}
+    </p>
+
+    <p>
+        {{ form.cantidad }}
+    </p>
+    <p>
+        <button type="submit">Grabar</button>
+    </p>
+</form>
